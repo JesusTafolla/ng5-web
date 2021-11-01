@@ -28,10 +28,6 @@ const LINKSPARAM = gql`
       id
       url
       descripttion
-      precio
-      postedBy {
-        username
-      }
     }
   }
 `;

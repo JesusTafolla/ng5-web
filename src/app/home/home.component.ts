@@ -41,7 +41,7 @@ export class HomeComponent implements OnInit {
   user: string = ""
   pass: string = ""
   token: string = ""
-  goals:string[] =[];
+  goals:Array<any>=[];
 
   loading: boolean = true;
   private querySubscription: Subscription = new Subscription;
