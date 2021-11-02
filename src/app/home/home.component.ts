@@ -82,6 +82,10 @@ export class HomeComponent implements OnInit {
   
   }  
 
+  refresh(): void {
+    window.location.reload();
+  }
+
   addItem() {
 //    this.goals.push(this.goalText);
 
@@ -101,6 +105,8 @@ export class HomeComponent implements OnInit {
     this.goalText = "";
     this.itemCount = this.goals.length;
     this._data.changeGoal(this.goals);
+    
+    this.refresh();
   }
 
   removeItem(i: number) {
